@@ -15,16 +15,16 @@
 
 // ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
 /** WordPress数据库的名称 */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', $_ENV['FENTAIAO_DB_NAME']);
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'username_here');
+define('DB_USER', $_ENV['FENTAIAO_DB_USER']);
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', $_ENV['FENTAIAO_DB_PASSWORD']);
 
 /** MySQL主机 */
-define('DB_HOST', 'localhost');
+define('DB_HOST', $_ENV['FENTAIAO_DB_HOST']);
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         $_ENV['FENTAIAO_AUTH_KEY']);
+define('SECURE_AUTH_KEY',  $_ENV['FENTAIAO_SECURE_AUTH_KEY']);
+define('LOGGED_IN_KEY',    $_ENV['FENTAIAO_LOGGED_IN_KEY']);
+define('NONCE_KEY',        $_ENV['FENTAIAO_NONCE_KEY']);
+define('AUTH_SALT',        $_ENV['FENTAIAO_AUTH_SALT']);
+define('SECURE_AUTH_SALT', $_ENV['FENTAIAO_SECURE_AUTH_SALT']);
+define('LOGGED_IN_SALT',   $_ENV['FENTAIAO_LOGGED_IN_SALT']);
+define('NONCE_SALT',       $_ENV['FENTAIAO_NONCE_SALT']);
 
 /**#@-*/
 
